@@ -85,7 +85,7 @@ function timeout() {
 		//restart
 		if(j2[i]==NaN){i=0}
 		//sravni arr
-		h2.innerHTML=`${a[i]}`
+		h2.innerHTML=`${a[i]}<p></p> decimal points: ${i}`
 		if(a[i]==0){
 			h1.innerHTML+=`<td> </td>`;
 		}
@@ -143,7 +143,6 @@ function timeout() {
                         else{
 							h1.innerHTML+=`<tr>
 							<td>${a[i]+1}</td></tr>`
-							
 							play2();
 							play3();
                         
@@ -159,6 +158,10 @@ function timeout() {
 window.setTimeout(timeout, 120);
 
 }
-
+document.getElementById('btn2').onclick= 
+function f1(){
+	alert('Reload?')
+	window.location.reload();
+return};
 
 document.getElementById('btn').onclick=  gbl
